@@ -26,6 +26,7 @@ namespace TalentPay
         {
             try
             {
+                Thread.Sleep(3000);
                 driver.FindElement(By.XPath("//div[contains(@class,'col-xs-4 col-sm-4 col-md-4 col-lg-4 signup-modal-text11 talent_option forDes') and .//a[contains(., 'I AM TALENT')]]")).Click();
                 Thread.Sleep(1000);
                 driver.FindElement(By.XPath("//*[contains(@class,'button_grey more forDes')]")).Click();
