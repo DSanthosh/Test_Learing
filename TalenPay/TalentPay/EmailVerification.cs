@@ -28,8 +28,8 @@ namespace TalenPay
 
             test = extent.CreateTest("Email Verification");
             driver.Navigate().GoToUrl(eMailUrl);
+            Thread.Sleep(3000);
             test.Log(Status.Pass, "Successfully confirmed the Email verification");
-            Thread.Sleep(2000);
             }
             catch (Exception e)
             {
